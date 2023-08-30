@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "CodeGPT",
+  "version": "0.6.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  },
+  "icons": {
+    "32": "codegpt-32.png",
+    "128": "codegpt-128.png",
+    "512": "codegpt-512.png",
+    "1024": "codegpt.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ]
+}
